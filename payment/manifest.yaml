@@ -22,7 +22,7 @@ metadata:
     component: rabbitmq
     project: roboshop
     env: dev 
-    tier: database
+    tier: app
 type: opaque 
 data:
   AMQP_USER: "cm9ib3Nob3A="
