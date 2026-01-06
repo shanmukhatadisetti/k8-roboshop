@@ -15,7 +15,7 @@ spec:
       project: roboshop
       env: dev
       tier: app
-  tempalte:
+  template:
     metadata:
       lables:
         component: catalogue
