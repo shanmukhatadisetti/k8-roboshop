@@ -10,20 +10,21 @@ metadata:
 spec:
   replicas: 1
   selector:
-     matchLabels:
+    matchLabels:
       component: mongodb
       project: roboshop
       env: dev 
       tier: database
 
   template:
-    labels:
-      component: mongodb
-      project: roboshop
-      env: dev 
-      tier: database
-  spec:
-    containers:
-      - name: mongodb
-        image: shanmukhatadisetti/mongodb:v1
+    metadata:
+      labels:
+        component: mongodb
+        project: roboshop
+        env: dev 
+        tier: database
+    spec:
+      containers:
+        - name: mongodb
+          image: shanmukhatadisetti/mongodb:v1
         
