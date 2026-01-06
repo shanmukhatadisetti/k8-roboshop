@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: catalogue
-          images: shanmukhatadisetti/catalogue:v1
+          image: shanmukhatadisetti/catalogue:v1
 ---
 apiVersion: v1
 kind: Service
