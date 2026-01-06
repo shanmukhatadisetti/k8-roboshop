@@ -1,0 +1,29 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  labels:
+    component: mongodb
+    project: roboshop
+    env: dev 
+    tier: database 
+spec:
+  replicas: 1
+  selector:
+     matchLabels:
+      component: mongodb
+      project: roboshop
+      env: dev 
+      tier: database
+
+  template:
+    labels:
+      component: mongodb
+      project: roboshop
+      env: dev 
+      tier: database
+  spec:
+    containers:
+      - name: mongodb
+        image: shanmukhatadisetti/mongodb:v1
+        
